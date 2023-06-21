@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html,
+      body {
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      main {
+        min-height: 100vh;
+        min-width: 100vw;
+      }
+      nav {
+        display: flex;
+        gap: 1em;
+        position: fixed;
+        bottom: 5%;
+        width: 100vw;
+        justify-content: center;
+      }
+      li {
+        list-style-type: none;
+      }
+      a {
+        font-size: 1.5rem;
+        color: black;
+      }
+      .images {
+        height: 100vh;
+        width: 100vw;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+      .images:nth-child(1) {
+        background-image: url(/summer.png);
+      }
+      .images:nth-child(2) {
+        background-image: url(/autumn.png);
+      }
+      .images:nth-child(3) {
+        background-image: url(/winter.png);
+      }
+      .images:nth-child(4) {
+        background-image: url(/spring.png);
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <li><a href="#summer">summer</a></li>
+      <li><a href="#autumn">autumn</a></li>
+      <li><a href="#winter">winter</a></li>
+      <li><a href="#spring">spring</a></li>
+    </nav>
+    <main>
+      <div class="images" id="summer"></div>
+      <div class="images" id="autumn"></div>
+      <div class="images" id="winter"></div>
+      <div class="images" id="spring"></div>
+    </main>
+  </body>
+</html>
